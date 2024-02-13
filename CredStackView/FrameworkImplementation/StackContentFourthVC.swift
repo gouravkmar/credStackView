@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StackContentFirstVC: UIViewController {
+class StackContentFourthVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,23 +19,20 @@ class StackContentFirstVC: UIViewController {
     
 
 }
-extension StackContentFirstVC:StackViewCTAProtocol {
+extension StackContentFourthVC:StackViewCTAProtocol {
     func ctaTapped(stackManager: StackViewManager?) {
-        let secondVC = StackContentSecondVC()
-        secondVC.setColor(color: .blue)
-        stackManager?.showStackVC(close: { frame in
-            return secondVC
-        })
+//        let secondVC = StackContentSecondVC()
+        setColor(color: .blue)
     }
     
    
     
     var ctaText: String {
-        return "First CTA"
+        return "Fourth CTA"
     }
     
     var ctaColor: UIColor? {
-        return UIColor.green
+        return UIColor.purple
     }
     
     

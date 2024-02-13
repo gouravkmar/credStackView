@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "072341B6-BD88-4317-A755-1A5D875462D4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F1EC3A3-5B24-4146-9B91-9E3BC6FA6D2D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CredStackView/FrameworkImplementation/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "showMainStack()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5F1EC3A3-5B24-4146-9B91-9E3BC6FA6D2D - a7becc590ab94ac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.ViewController.showMainStack() -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/CredStackView/FrameworkImplementation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  uuid = "5F1EC3A3-5B24-4146-9B91-9E3BC6FA6D2D - a7becc590ab94ac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.ViewController.showMainStack() -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/CredStackView/FrameworkImplementation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9CDC4B5-B46C-45B6-AA23-04F5502CC59B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EEA8D1F-3259-406B-9A96-29B8571413B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getAvailableFrame()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4BD7996-3ACF-4AA4-B76B-E6DB444B1D0A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2E9A917-7A21-4E11-A296-810D6F7D64FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E397440-3A02-4D78-8B5F-C4965A488DB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "setupCTAButton(viewC:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "231B5C81-F07E-4125-B7E6-336069FB27BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CredStackView/FrameworkImplementation/StackContentFirstVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ctaTapped(stackManager:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E420F7B4-A57C-4E20-81C7-8998C22C787F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "ctaButtonTap()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E420F7B4-A57C-4E20-81C7-8998C22C787F - 15d265f33ccbe5e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.ctaButtonTap() -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "E420F7B4-A57C-4E20-81C7-8998C22C787F - 15d265f33ccbe5e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.ctaButtonTap() -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "333">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31B7B4DC-9C96-4E32-BC9D-9706F0CF2918"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "ctaButtonTap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B29D27C1-0694-4CFB-B78F-33054F7EADDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CredStackView/FrameworkImplementation/StackContentFirstVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "ctaTapped(stackManager:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76277A36-2262-4E8A-99A5-6131204C1C3F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "stackExpandTapped(index:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "76277A36-2262-4E8A-99A5-6131204C1C3F - c9a9e9b54f7045dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.stackExpandTapped(index: Swift.Int) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  uuid = "76277A36-2262-4E8A-99A5-6131204C1C3F - 409cc6a7ba3ef3b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CredStackView.ContainerView) -&gt; Swift.Bool in CredStackView.StackViewManager.stackExpandTapped(index: Swift.Int) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  uuid = "76277A36-2262-4E8A-99A5-6131204C1C3F - c9a9e9b54f7045dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.stackExpandTapped(index: Swift.Int) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "139">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B553F43-A6FF-4F61-A233-735AC4BA4818"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CredStackView/FrameworkImplementation/StackContentFourthVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "ctaTapped(stackManager:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99BE21B4-D6D6-4134-80EB-5FBF08183AF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8850BEB3-766A-4DE7-A2C5-52B1BDA16A85"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "getAvailableFrame()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8850BEB3-766A-4DE7-A2C5-52B1BDA16A85 - 314f3161a8f93d30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.getAvailableFrame() -&gt; __C.CGRect"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1331">
+               </Location>
+               <Location
+                  uuid = "8850BEB3-766A-4DE7-A2C5-52B1BDA16A85 - 314f3161a8f93d30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.getAvailableFrame() -&gt; __C.CGRect"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1308">
+               </Location>
+               <Location
+                  uuid = "8850BEB3-766A-4DE7-A2C5-52B1BDA16A85 - 314f3161a8f93d30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.getAvailableFrame() -&gt; __C.CGRect"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1315">
+               </Location>
+               <Location
+                  uuid = "8850BEB3-766A-4DE7-A2C5-52B1BDA16A85 - 314f3161a8f93fbc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.getAvailableFrame() -&gt; __C.CGRect"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD32321F-E03F-4325-9B95-D743DBA06550"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "dismissTap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C65D42EA-CD14-48BA-9AA5-150A2EECA8DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "expandTap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9C0C9F0-21F7-49B8-A4A7-E8472C9F7B00"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9C0C9F0-21F7-49B8-A4A7-E8472C9F7B00 - 34075e51937913d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.showStackVC(close: (__C.CGRect) -&gt; __C.UIViewController) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "509">
+               </Location>
+               <Location
+                  uuid = "D9C0C9F0-21F7-49B8-A4A7-E8472C9F7B00 - 34075e5193791268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.showStackVC(close: (__C.CGRect) -&gt; __C.UIViewController) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "626">
+               </Location>
+               <Location
+                  uuid = "D9C0C9F0-21F7-49B8-A4A7-E8472C9F7B00 - 34075e5193791268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.showStackVC(close: (__C.CGRect) -&gt; __C.UIViewController) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1298">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F42CB69E-9A74-4D24-AE98-8273B2D1398B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "dismissButtonTapped(index:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F42CB69E-9A74-4D24-AE98-8273B2D1398B - a9fac2127b8bf144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.dismissButtonTapped(index: Swift.Int) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "F42CB69E-9A74-4D24-AE98-8273B2D1398B - 55b1f6c31f979b8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CredStackView.ContainerView) -&gt; Swift.Bool in CredStackView.StackViewManager.dismissButtonTapped(index: Swift.Int) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "77">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCE7272D-8A93-4709-A618-F3AD1F087380"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "dismissButtonTapped(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D54C2AF-1514-4189-8BCE-EF46F4E0AA76"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "stackExpandTapped(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20902C75-A54C-4D2A-9905-ED05C654F4E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "939BE223-DA63-44FD-8868-D21166508FB1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "showStackVC(close:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "939BE223-DA63-44FD-8868-D21166508FB1 - 34075e51937913b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.showStackVC(close: (__C.CGRect) -&gt; __C.UIViewController) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  uuid = "939BE223-DA63-44FD-8868-D21166508FB1 - 34075e51937913b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CredStackView.StackViewManager.showStackVC(close: (__C.CGRect) -&gt; __C.UIViewController) -&gt; ()"
+                  moduleName = "CredStackView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/newuser/Desktop/Projects/CredStackView/StackLayer/StackViewManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77A372F7-F382-4211-A9B8-7A8B92B7D11E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StackLayer/StackViewManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "getAvailableFrame()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

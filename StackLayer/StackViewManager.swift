@@ -17,19 +17,50 @@ protocol StackTapProtocol:AnyObject {
     func dismissButtonTapped(index:Int)
     
 }
-class StackView : UIView {
+enum ViewState{
+    case expanded,collapsed
+}
+class ContainerView : UIViewController {
     var index : Int
-    var childView : UIView
+    var childView : UIViewController
     weak var delegate : (StackTapProtocol)?
-    
-    init(frame: CGRect,index :Int,view:UIView) {
+    var state : ViewState = .collapsed
+    var expandButton = UIButton(frame: CGRectZero)
+    init(frame: CGRect,index :Int,view:UIViewController) {
         self.index = index
         self.childView = view
-        super.init(frame: frame)
-        childView.layer.cornerRadius = 10.0
-        addSubview(childView)
+        
+        super.init(nibName: nil, bundle: nil)
+        self.view.frame = frame
+        childView.view.layer.cornerRadius = 10.0
+        self.view.addSubview(childView.view)
+        expandButton = UIButton(frame: CGRect(x: frame.width - 70, y: 20, width: 20, height: 20))
+        expandButton.addTarget(self, action: #selector(dismissTap), for: .touchUpInside)
+        expandButton.setImage(UIImage(named: "arrowDown"), for: .normal)
+        expandButton.imageView?.contentMode = .scaleAspectFit
+        self.view.addSubview(expandButton)
+        let gestRec = UITapGestureRecognizer(target: self, action: #selector(expandTap))
+        gestRec.view?.frame = CGRect(x: 0, y: 0, width: Int(frame.width) - 100, height: 100)
+        self.view.addGestureRecognizer(gestRec)
+        hideExpandButton()
     }
-    
+    func showExpandButton(){
+        expandButton.isHidden = false
+    }
+    func hideExpandButton(){
+        expandButton.isHidden = true
+    }
+    @objc func expandTap(){
+        delegate?.stackExpandTapped(index: index)
+        if state == .expanded{
+            hideExpandButton()
+        }
+        
+    }
+    @objc func dismissTap(){
+        delegate?.dismissButtonTapped(index: index)
+        hideExpandButton()
+    }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,98 +69,136 @@ class StackView : UIView {
 }
 
 class StackViewManager: UIViewController {
-    var viewStack : [StackView] = []
+    var viewStack : [ContainerView] = []
     var currentFrame  = CGRectZero
     let gapBetweenViews = 100.0
-    let bottomCTAHeight = 100.0
+    let bottomCTAHeight = 80.0
     var ctaButton = UIButton(frame: CGRectZero)
     weak var delegate : StackViewCTAProtocol?
+    var expandedViewIndex = -1
     override func viewDidLoad() {
         super.viewDidLoad()
         currentFrame = view.frame
         view.addSubview(ctaButton)
         view.backgroundColor = .gray
+        let crossButton = UIButton(frame: CGRect(x: 20, y: 60, width: 30, height: 30))
+        crossButton.setImage(UIImage(named: "circle.cross"), for: .normal)
+        crossButton.imageView?.contentMode = .scaleAspectFill
+        crossButton.addTarget(self, action: #selector(crossTap), for: .touchUpInside)
+        view.addSubview(crossButton)
     }
     
     
     func getAvailableFrame()->CGRect{
-        let  requiredHeight = (currentFrame.origin.y + 2 * gapBetweenViews)
+        let stackCount = viewStack.count
+        let offset = 100.0
+        var newframe = view.frame.offsetBy(dx: 0, dy: gapBetweenViews * Double(stackCount) + offset)
+
+        let  requiredHeight = (newframe.origin.y + 2 * gapBetweenViews)
         let availableHeight = (view.frame.height - bottomCTAHeight)
         if  availableHeight >= requiredHeight {
-            var newframe = view.frame
-            newframe.size.height = newframe.height - gapBetweenViews
-            newframe = newframe.offsetBy(dx: 0, dy: gapBetweenViews)
             return newframe
         }
         return CGRectZero
     }
-    func updateAvailableFrame(){
-        let stackCount = viewStack.count
-        var newframe = view.frame
-        newframe.size.height = newframe.height - gapBetweenViews * Double(stackCount)
-        newframe = newframe.offsetBy(dx: 0, dy: gapBetweenViews * Double(stackCount))
-        currentFrame = newframe
-        
+    @objc func crossTap(){
+        self.dismiss(animated: true)
+        viewStack.removeAll()
     }
     
-    func showStackVC(close:(CGRect)->UIView){
+    func showStackVC(close:(CGRect)->UIViewController){
         let nextframe = getAvailableFrame()
+        if expandedViewIndex != -1 {
+            stackExpandTapped(index: expandedViewIndex)
+        }
         guard nextframe != CGRectZero else {
             return
         }
-        let view = close(nextframe)
-        let stackView = StackView(frame: nextframe, index: viewStack.count, view: view)
+        if !viewStack.isEmpty , let lastV = viewStack.last {
+            lastV.showExpandButton()
+        }
+        let viewC = close(nextframe)
+        let stackView = ContainerView(frame:view.frame.offsetBy(dx: 0, dy: view.frame.height - bottomCTAHeight) , index: viewStack.count, view: viewC)
         viewStack.append(stackView)
-        let visibleFrame = stackView.frame.offsetBy(dx: 0, dy: nextframe.origin.y)
-        stackView.frame = visibleFrame
-        self.view.addSubview(stackView)
-        
-        
+        self.view.addSubview(stackView.view)
+        UIView.animate(withDuration: 0.5, animations: {
+            stackView.view.frame = nextframe
+        })
+        stackView.delegate = self
+        setupCTAButton(viewC: viewC)
     }
     
-    func setupCTAButton(view : UIView){
-        guard let newView = view as? StackViewCTAProtocol else {
+    func setupCTAButton(viewC : UIViewController){
+        guard let newView = viewC as? StackViewCTAProtocol else {
             ctaButton.frame = CGRectZero
             return
         }
+        self.view.bringSubviewToFront(ctaButton)
         ctaButton.setTitle(newView.ctaText, for: .normal)
-        ctaButton.frame = CGRect(x: 0, y: self.view.frame.height - bottomCTAHeight, width: view.frame.width, height: bottomCTAHeight)
+        ctaButton.frame = CGRect(x: 0, y: self.view.frame.height - bottomCTAHeight, width: viewC.view.frame.width, height: bottomCTAHeight)
         ctaButton.backgroundColor = newView.ctaColor ?? UIColor.systemBackground
         ctaButton.addTarget(self, action: #selector(ctaButtonTap), for: .touchUpInside)
         
     }
     @objc func ctaButtonTap(){
-        if let topView = viewStack.last as? StackViewCTAProtocol {
-            topView.ctaTapped(stackManager: self)
+        if let topView = viewStack.last?.childView ,let delegate = topView as? StackViewCTAProtocol {
+            delegate.ctaTapped(stackManager: self)
         }
         
     }
+    
 
 }
 
 extension StackViewManager : StackTapProtocol  {
     func stackExpandTapped(index: Int) {
-        for view in viewStack {
-            if view.index > index {
-                view.removeFromSuperview() //animate this
-                view.frame = view.frame.offsetBy(dx: 0, dy: -((Double(index) * gapBetweenViews)))
-            }
+        let fr = viewStack[index]
+        if fr.state == .collapsed {
+            viewStack.removeAll(where: {cont in
+                if cont.index > index {
+                    UIView.animate(withDuration: 0.5, animations: {
+                        cont.view.frame.origin.y += cont.view.frame.height
+                    }, completion: {_ in 
+                        cont.view.removeFromSuperview()
+                    })
+                    return true
+                }
+                return false})
+            let stackCount = viewStack.count
+            
+            var newframe = fr.view.frame
+            newframe.size.height = newframe.height + gapBetweenViews * Double(stackCount - 1)
+            newframe = newframe.offsetBy(dx: 0, dy: -gapBetweenViews * Double(stackCount - 1))
+            fr.view.frame = newframe
+            fr.state = .expanded
+            expandedViewIndex = index
+        }else {
+            expandedViewIndex = -1
+            let stackCount = viewStack.count
+            var newframe = fr.view.frame
+            newframe.size.height = newframe.height + self.gapBetweenViews * Double(stackCount)
+            newframe = newframe.offsetBy(dx: 0, dy: self.gapBetweenViews * Double(stackCount - 1))
+            UIView.animate(withDuration: 0.5, animations: {
+                fr.view.frame = newframe
+            })
+            fr.state = .collapsed
         }
-        viewStack.remove(at: index)
-        updateAvailableFrame()
+        setupCTAButton(viewC: fr.childView)
     }
     
     func dismissButtonTapped(index: Int) {
-        for view in viewStack {
-            if view.index > index {
-                view.removeFromSuperview() //animate this
+        viewStack.removeAll(where: {cont in
+            if cont.index > index {
+                UIView.animate(withDuration: 0.5, animations: {
+                    cont.view.frame.origin.y += cont.view.frame.height
+                }, completion: {_ in
+                    cont.view.removeFromSuperview()
+                })
+                return true
             }
-        }
-        viewStack.remove(at: index)
-        updateAvailableFrame()
+            return false})
+        let fr = viewStack[index]
+        setupCTAButton(viewC: fr.childView)
     }
-    
-    
-    
-    
 }
+
