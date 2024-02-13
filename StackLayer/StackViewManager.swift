@@ -39,9 +39,12 @@ class ContainerView : UIViewController {
         expandButton.setImage(UIImage(named: "arrowDown"), for: .normal)
         expandButton.imageView?.contentMode = .scaleAspectFit
         self.view.addSubview(expandButton)
+        let overlayView = UIView(frame: CGRect(x: 0, y: 0, width: Int(frame.width) - 100, height: 100))
+        overlayView.backgroundColor = UIColor.clear
+        self.view.addSubview(overlayView)
         let gestRec = UITapGestureRecognizer(target: self, action: #selector(expandTap))
         gestRec.view?.frame = CGRect(x: 0, y: 0, width: Int(frame.width) - 100, height: 100)
-        self.view.addGestureRecognizer(gestRec)
+        overlayView.addGestureRecognizer(gestRec)
         hideExpandButton()
     }
     func showExpandButton(){
