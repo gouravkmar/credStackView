@@ -1,4 +1,4 @@
 
 Demo for the stack view abstraction. 
-https://github.com/gouravkmar/credStackView/assets/40431268/c89376e3-569b-4961-8b05-2951c78f83e4
 
+https://github.com/gouravkmar/credStackView/assets/40431268/47a27033-b0d6-4fca-8506-aeecbfc02b45
